@@ -1,0 +1,18 @@
+[package]
+name = "snaprng-lab"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Batch clone / snapshot experiment harness measuring RNG output collisions"
+
+[[bin]]
+name = "snaprng-lab"
+path = "src/main.rs"
+
+[dependencies]
+snaprng = { path = "../snaprng", features = ["test-util"] }
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+rand_core = { workspace = true }
+getrandom = { workspace = true }

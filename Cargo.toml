@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["crates/snaprng", "crates/snaprng-lab"]
+
+[workspace.package]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+rust-version = "1.85"
+
+[workspace.dependencies]
+rand = "0.10"
+rand_core = "0.10"
+rand_chacha = "0.10"
+getrandom = "0.4"
+sha2 = "0.11"
+libc = "0.2"
